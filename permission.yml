@@ -1,0 +1,7 @@
+---
+- hosts: devops
+  user: ubuntu
+  sudo: yes
+  tasks:
+    - name: changing the permission of directory
+      file: path=/home/ubuntu/testing mode=600
